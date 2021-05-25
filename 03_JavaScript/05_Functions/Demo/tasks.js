@@ -76,3 +76,28 @@
 // }
 //
 // console.log(count,happyNums);
+
+Без функция **
+const yourArray = ['Welcome', 'to', 'Welcome', 'to', 'Javascript','Welcome', 'everyone',];
+
+let duplicatesTwo = []
+
+const tempArray = [...yourArray].sort()
+let counter = 1;
+
+for (let i = 0; i < yourArray.length; i++) {
+ 	let counter = 1;
+  for (let x = i+2; x < yourArray.length; x++) {
+ 		if (yourArray[i] == yourArray[x]) {
+ 			counter +=1;
+ 			var a = (yourArray[i]);
+    }
+    if (counter > duplicatesTwo) {
+ 			duplicatesTwo = counter;
+    }
+  }
+}
+
+   
+
+console.log(a,duplicatesTwo)
